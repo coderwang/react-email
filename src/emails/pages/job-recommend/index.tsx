@@ -1,15 +1,7 @@
 import { Html, Body, Img, Button } from '@react-email/components';
 import React from 'react';
 import Footer from '../../../components/Footer';
-
-const otdName = {
-	color: '#222222',
-	fontFamily: 'D-DIN',
-	fontSize: '21px',
-	fontStyle: 'normal',
-	fontWeight: 700,
-	verticalAlign: 'middle',
-};
+import ImgWithText from '../../../components/ImgWithText';
 
 const userName = {
 	margin: '0 0 36px 0',
@@ -261,20 +253,7 @@ const JobRecommend = () => {
 				<div style={{ maxWidth: '600px', margin: '0 auto' }}>
 					<div style={{ height: '8px', marginBottom: '20px', backgroundColor: '#06605A' }}></div>
 					<div style={{ padding: '0 16px' }}>
-						<div style={{ marginBottom: '28px' }}>
-							<Img
-								style={{
-									display: 'inline-block',
-									marginRight: '10px',
-									verticalAlign: 'middle',
-								}}
-								src="https://img.offertoday.com/static/file/2024/de2kzz41jv1715073903979.png.webp"
-								alt="logo"
-								width="32"
-								height="32"
-							/>
-							<span style={otdName}>OfferToday</span>
-						</div>
+						<ImgWithText wrapperStyle={{ marginBottom: '28px' }} />
 						<div style={userName}>Dear, recevier name</div>
 						<div style={replyText}>You got a new reply</div>
 						<div style={replyContent}>
