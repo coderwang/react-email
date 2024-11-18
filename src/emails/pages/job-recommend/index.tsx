@@ -2,6 +2,7 @@ import { Html, Body, Img, Button } from '@react-email/components';
 import React from 'react';
 import Footer from '../../../components/Footer';
 import ImgWithText from '../../../components/ImgWithText';
+import BasicButton from '../../../components/BasicButton';
 
 const userName = {
 	margin: '0 0 36px 0',
@@ -99,27 +100,6 @@ const contactText = {
 	lineHeight: '21px',
 	background: '#C0EB5E',
 	borderRadius: '0px 10px 10px 10px',
-};
-
-const replyButton = {
-	display: 'block',
-	margin: '0 auto 21px',
-	textAlign: 'center' as const,
-};
-
-const replyButtonText = {
-	display: 'inline-block',
-	width: '240px',
-	height: '48px',
-	color: '#FFFFFF',
-	fontFamily: 'SF Pro',
-	fontSize: '16px',
-	fontStyle: 'normal',
-	fontWeight: 500,
-	lineHeight: '48px',
-	background: '#06605A',
-	borderRadius: '8px',
-	textAlign: 'center' as const,
 };
 
 const unreadMsg = {
@@ -289,9 +269,14 @@ const JobRecommend = () => {
 								Hello, your profile aligns well with our position. Could you please provide your
 								contact information and resume?
 							</div>
-							<Button style={replyButton} href="https://baidu.com" target="_blank">
-								<span style={replyButtonText}>Reply</span>
-							</Button>
+							<BasicButton
+								wrapperStyle={{
+									marginBottom: '21px',
+								}}
+								href="https://baidu.com"
+							>
+								Reply
+							</BasicButton>
 							<div style={unreadMsg}>
 								<span style={unreadCount}>Unread messages (999+)</span>
 								<Button href="https://baidu.com" target="_blank">
