@@ -509,31 +509,24 @@ const JobRecommend = () => {
 								<span style={applyButtonText}>Apply</span>
 							</Button>
 						</div>
-						<Button
-							style={{
-								display: 'block',
-								marginTop: '24px',
-								marginBottom: '36px',
-								textAlign: 'center',
-							}}
-							href="https://baidu.com"
-							target="_blank"
-						>
-							<div style={moreJobsBtn}>
-								<span style={moreJobsText}>View More Jobs</span>
-								<Img
-									style={{
-										display: 'inline-block',
-										marginLeft: '8px',
-										verticalAlign: 'middle',
-									}}
-									src="https://img.offertoday.com/static/file/2024/ik1ig5frwf1723699419099.png"
-									alt="arrow right"
-									width="12"
-									height="12"
-								/>
-							</div>
-						</Button>
+						<div style={{ textAlign: 'center', marginTop: '24px', marginBottom: '36px' }}>
+							<Button href="https://baidu.com" target="_blank">
+								<div style={moreJobsBtn}>
+									<span style={moreJobsText}>View More Jobs</span>
+									<Img
+										style={{
+											display: 'inline-block',
+											marginLeft: '8px',
+											verticalAlign: 'middle',
+										}}
+										src="https://img.offertoday.com/static/file/2024/ik1ig5frwf1723699419099.png"
+										alt="arrow right"
+										width="12"
+										height="12"
+									/>
+								</div>
+							</Button>
+						</div>
 						<div style={greeting}>Sincerely yours, </div>
 						<div style={{ ...greeting, marginBottom: '40px' }}>OfferToday Team</div>
 						<Footer />
