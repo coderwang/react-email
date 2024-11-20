@@ -1,4 +1,4 @@
-import { Html, Body, Img, Button } from '@react-email/components';
+import { Html, Body, Img, Button, Row, Column } from '@react-email/components';
 import React from 'react';
 import Footer from '../../../components/Footer';
 import ImgWithText from '../../../components/ImgWithText';
@@ -300,34 +300,34 @@ const JobRecommend = () => {
 						</div>
 						<div style={jobRecommendDesc}>Apply now and land your dream job!</div>
 						<div style={card}>
-							<div>
-								<div
-									style={{
-										display: 'inline-block',
-										width: 'calc(100% - 68px)',
-										marginRight: '28px',
-									}}
-								>
-									<div style={jobTitle}>
-										Product Manager Lead1 Product Manager Lead2 Product Manager Lead3 Product
-										Manager Lead4 Product Manager Lead5
+							<Row>
+								<Column>
+									<div
+										style={{
+											marginRight: '28px',
+										}}
+									>
+										<div style={jobTitle}>
+											Product Manager Lead1 Product Manager Lead2 Product Manager Lead3 Product
+											Manager Lead4 Product Manager Lead5
+										</div>
+										<div style={jobCompany}>
+											Tesla1 Tesla2 Tesla3 Tesla4 Tesla5 Tesla6 Tesla7 Tesla8 Tesla9 Tesla10
+										</div>
 									</div>
-									<div style={jobCompany}>
-										Tesla1 Tesla2 Tesla3 Tesla4 Tesla5 Tesla6 Tesla7 Tesla8 Tesla9 Tesla10
-									</div>
-								</div>
-								<Img
-									style={{
-										display: 'inline-block',
-										verticalAlign: 'top',
-										borderRadius: '6px',
-									}}
-									src="https://pic.offertodayhk.com/server/avatar/20240820/8c374c40ed34453f864d1d94c44ff3f0_s.jpg.webp"
-									alt="company logo"
-									width="40"
-									height="40"
-								/>
-							</div>
+								</Column>
+								<Column style={{ verticalAlign: 'top', width: '40px' }}>
+									<Img
+										style={{
+											borderRadius: '6px',
+										}}
+										src="https://pic.offertodayhk.com/server/avatar/20240820/8c374c40ed34453f864d1d94c44ff3f0_s.jpg.webp"
+										alt="company logo"
+										width="40"
+										height="40"
+									/>
+								</Column>
+							</Row>
 							<div style={{ fontSize: '0px', marginBottom: '12px' }}>
 								<div
 									style={{
@@ -409,29 +409,30 @@ const JobRecommend = () => {
 						</div>
 						<div style={{ height: '12px' }} />
 						<div style={card}>
-							<div>
-								<div
-									style={{
-										display: 'inline-block',
-										width: 'calc(100% - 68px)',
-										marginRight: '28px',
-									}}
-								>
-									<div style={jobTitle}>Product Manager Lead</div>
-									<div style={jobCompany}>Tesla</div>
-								</div>
-								<Img
-									style={{
-										display: 'inline-block',
-										verticalAlign: 'top',
-										borderRadius: '6px',
-									}}
-									src="https://pic.offertodayhk.com/server/avatar/20240822/714cfb40e4f94d02b2a30f4cc3924c4c_s.jpg.webp"
-									alt="company logo"
-									width="40"
-									height="40"
-								/>
-							</div>
+							<Row>
+								<Column>
+									<div
+										style={{
+											marginRight: '28px',
+										}}
+									>
+										<div style={jobTitle}>Product Manager Lead</div>
+										<div style={jobCompany}>Tesla</div>
+									</div>
+								</Column>
+								<Column style={{ verticalAlign: 'top', width: '40px' }}>
+									<Img
+										style={{
+											borderRadius: '6px',
+										}}
+										src="https://pic.offertodayhk.com/server/avatar/20240822/714cfb40e4f94d02b2a30f4cc3924c4c_s.jpg.webp"
+										alt="company logo"
+										width="40"
+										height="40"
+									/>
+								</Column>
+							</Row>
+
 							<div style={{ fontSize: '0px', marginBottom: '12px' }}>
 								<div
 									style={{
