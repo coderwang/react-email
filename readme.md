@@ -18,14 +18,16 @@ pnpm dev
 > (1) 网易邮箱大师，不生效（未知）
 >
 > 方法三：`display: '-webkit-box' lineClamp: 1,WebkitLineClamp: 1,WebkitBoxOrient: 'vertical' as const`  
-> (1) gmail，不生效（会自动去掉 lineClamp、WebkitLineClamp、WebkitBoxOrient 等属性）
+> (1) gmail，不生效（会自动去掉 lineClamp、WebkitLineClamp、WebkitBoxOrient 等属性）  
+> (2) outlook，不生效（会自动去掉 display: -webkit-box、lineClamp、WebkitLineClamp、WebkitBoxOrient 等属性）
 
 2、多行文本显示省略号
 
 > `display: '-webkit-box' lineClamp: 2,WebkitLineClamp: 2,WebkitBoxOrient: 'vertical' as const`  
-> gmail，不生效（原因如上）
+> (1) gmail，不生效（原因如上）  
+> (2) outlook，不生效（原因如上）
 
-3、gmail 不支持 transform 属性
+3、gmail、outlook 不支持 transform 属性（translate、rotate、scale 都不支持）
 
 4、gmail 对 webp 格式的透明图片支持的不是很好，可能需要你主动加一下圆角
 
@@ -37,7 +39,9 @@ pnpm dev
 
 8、Button 内的文字想要垂直居中，需要将内部的文字用 span 包裹
 
-9、图片和文字垂直居中对齐
+9、outlook 不支持 calc 函数
+
+10、图片和文字垂直居中对齐
 
 ```jsx
 <div style={{ fontSize: '0px', marginBottom: '28px' }}>
