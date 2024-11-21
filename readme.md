@@ -42,36 +42,6 @@ pnpm dev
 
 9、outlook 不支持 calc 函数
 
-10、图片和文字垂直居中对齐
+10、手机端浏览器 gmail 和 outlook 不支持写 style 标签，会自动删除
 
-```jsx
-<div style={{ fontSize: '0px', marginBottom: '28px' }}>
-	<Img
-		style={{
-			display: 'inline-block',
-			marginRight: '10px',
-			verticalAlign: 'middle',
-		}}
-		src="/static/otd_logo.png"
-		alt="logo"
-		width="32"
-		height="32"
-	/>
-	<div
-		style={{
-			color: '#222222',
-			fontFamily: 'D-DIN',
-			fontSize: '21px',
-			fontStyle: 'normal',
-			fontWeight: 700,
-			verticalAlign: 'middle',
-		}}
-	>
-		OfferToday
-	</div>
-</div>
-```
-
-(1) 必须同时设置图片和文字的 verticalAlign: 'middle'  
-(2) 如果文字使用 div 标签，则还需要设置它的父元素的 fontSize: '0px'（解决空白符问题）以及它自身 display: 'inline-block'（防止换行）  
-(3) 如果文字使用 div 标签，则不需要额外设置
+11、Column 组件和它的最外层子元素不要写左右 margin，在手机端浏览器会失效

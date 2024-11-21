@@ -235,10 +235,9 @@ const JobRecommend = () => {
 						</div>
 						<div style={{ ...card, marginBottom: '36px' }}>
 							<Row style={{ marginBottom: '12px' }}>
-								<Column style={{ verticalAlign: 'middle', width: '40px' }}>
+								<Column style={{ verticalAlign: 'middle', width: '54px' }}>
 									<Img
 										style={{
-											marginRight: '14px',
 											borderRadius: '50%',
 										}}
 										src="https://pic.offertodayhk.com/server/avatar/20240820/cc3b12d6f96645f18d8d1a4aa8b37d4a_s.jpeg.webp"
@@ -333,14 +332,14 @@ const JobRecommend = () => {
 							>
 								<Column
 									style={{
-										width: '15px',
+										width: '21px',
 										verticalAlign: 'top',
 									}}
 								>
 									<div
 										style={{
+											width: '15px',
 											height: '15px',
-											marginRight: '6px',
 											padding: '2.5px 0',
 										}}
 									>
@@ -363,7 +362,7 @@ const JobRecommend = () => {
 							<Row>
 								<Column
 									style={{
-										width: '15px',
+										width: '21px',
 										verticalAlign: 'top',
 									}}
 								>
@@ -371,7 +370,6 @@ const JobRecommend = () => {
 										style={{
 											width: '15px',
 											height: '4px',
-											marginRight: '6px',
 											padding: '8px 0',
 											textAlign: 'center',
 										}}
@@ -397,7 +395,7 @@ const JobRecommend = () => {
 							<Row>
 								<Column
 									style={{
-										width: '15px',
+										width: '21px',
 										verticalAlign: 'top',
 									}}
 								>
@@ -405,7 +403,6 @@ const JobRecommend = () => {
 										style={{
 											width: '15px',
 											height: '4px',
-											marginRight: '6px',
 											padding: '8px 0',
 											textAlign: 'center',
 										}}
@@ -467,14 +464,14 @@ const JobRecommend = () => {
 							>
 								<Column
 									style={{
-										width: '15px',
+										width: '21px',
 										verticalAlign: 'top',
 									}}
 								>
 									<div
 										style={{
+											width: '15px',
 											height: '15px',
-											marginRight: '6px',
 											padding: '2.5px 0',
 										}}
 									>
@@ -495,7 +492,7 @@ const JobRecommend = () => {
 							<Row>
 								<Column
 									style={{
-										width: '15px',
+										width: '21px',
 										verticalAlign: 'top',
 									}}
 								>
@@ -503,7 +500,6 @@ const JobRecommend = () => {
 										style={{
 											width: '15px',
 											height: '4px',
-											marginRight: '6px',
 											padding: '8px 0',
 											textAlign: 'center',
 										}}
@@ -529,7 +525,7 @@ const JobRecommend = () => {
 							<Row>
 								<Column
 									style={{
-										width: '15px',
+										width: '21px',
 										verticalAlign: 'top',
 									}}
 								>
@@ -537,7 +533,6 @@ const JobRecommend = () => {
 										style={{
 											width: '15px',
 											height: '4px',
-											marginRight: '6px',
 											padding: '8px 0',
 											textAlign: 'center',
 										}}
