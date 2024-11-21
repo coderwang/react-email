@@ -21,6 +21,7 @@ const ImgWithText: FC<ImgWithTextProps> = (props) => {
 					display: 'inline-block',
 					marginRight: '10px',
 					verticalAlign: 'middle',
+					borderRadius: '8px',
 					...imgStyle,
 				}}
 				src={

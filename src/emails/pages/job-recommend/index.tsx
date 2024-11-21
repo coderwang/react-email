@@ -345,6 +345,7 @@ const JobRecommend = () => {
 										}}
 									>
 										<Img
+											style={{ borderRadius: '50%' }}
 											src="https://img.offertoday.com/static/file/2024/l9xbn9tykp1728725429370.png.webp"
 											alt="salary"
 											width="15"
@@ -478,6 +479,7 @@ const JobRecommend = () => {
 										}}
 									>
 										<Img
+											style={{ borderRadius: '50%' }}
 											src="https://img.offertoday.com/static/file/2024/l9xbn9tykp1728725429370.png.webp"
 											alt="salary"
 											width="15"
