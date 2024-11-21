@@ -162,7 +162,6 @@ const jobTitle = {
 };
 
 const jobCompany = {
-	marginBottom: '12px',
 	color: '#363F4D',
 	fontFamily: 'SF Pro',
 	fontSize: '16px',
@@ -172,8 +171,6 @@ const jobCompany = {
 };
 
 const commonDesc = {
-	display: 'inline-block',
-	maxWidth: 'calc(100% - 21px)',
 	color: '#363F4D',
 	fontFamily: 'SF Pro',
 	fontSize: '14px',
@@ -297,7 +294,11 @@ const JobRecommend = () => {
 						</div>
 						<div style={jobRecommendDesc}>Apply now and land your dream job!</div>
 						<div style={card}>
-							<Row>
+							<Row
+								style={{
+									marginBottom: '12px',
+								}}
+							>
 								<Column>
 									<div
 										style={{
@@ -325,88 +326,116 @@ const JobRecommend = () => {
 									/>
 								</Column>
 							</Row>
-							<div style={{ fontSize: '0px', marginBottom: '12px' }}>
-								<div
+							<Row
+								style={{
+									marginBottom: '12px',
+								}}
+							>
+								<Column
 									style={{
-										display: 'inline-block',
-										height: '15px',
-										marginRight: '6px',
-										padding: '2.5px 0',
+										width: '15px',
 										verticalAlign: 'top',
 									}}
 								>
-									<Img
+									<div
 										style={{
-											display: 'inline-block',
+											height: '15px',
+											marginRight: '6px',
+											padding: '2.5px 0',
 										}}
-										src="https://img.offertoday.com/static/file/2024/l9xbn9tykp1728725429370.png.webp"
-										alt="salary"
-										width="15"
-										height="15"
-									/>
-								</div>
-								<div style={commonDesc}>
-									HK $20K-50K/Monthly·Salary negotiable or HK $300-800/Daily·Salary negotiable
-								</div>
-							</div>
+									>
+										<Img
+											src="https://img.offertoday.com/static/file/2024/l9xbn9tykp1728725429370.png.webp"
+											alt="salary"
+											width="15"
+											height="15"
+										/>
+									</div>
+								</Column>
+								<Column>
+									<div style={commonDesc}>
+										HK $20K-50K/Monthly·Salary negotiable or HK $300-800/Daily·Salary negotiable
+									</div>
+								</Column>
+							</Row>
 
-							<div style={{ fontSize: '0px' }}>
-								<div
+							<Row>
+								<Column
 									style={{
-										display: 'inline-block',
-										width: '4px',
-										height: '4px',
-										marginRight: '6px',
-										padding: '8px 5.5px',
-										textAlign: 'center',
+										width: '15px',
 										verticalAlign: 'top',
 									}}
 								>
 									<div
 										style={{
-											display: 'inline-block',
-											width: '4px',
+											width: '15px',
 											height: '4px',
-											backgroundColor: '#D8DDE3',
-											borderRadius: '50%',
+											marginRight: '6px',
+											padding: '8px 0',
+											textAlign: 'center',
 										}}
-									/>
-								</div>
-								<div style={commonDesc}>
-									Opportunities for creative development Opportunities for creative development
-								</div>
-							</div>
-							<div style={{ fontSize: '0px' }}>
-								<div
+									>
+										<div
+											style={{
+												width: '4px',
+												height: '4px',
+												margin: '0 auto',
+												backgroundColor: '#D8DDE3',
+												borderRadius: '50%',
+											}}
+										/>
+									</div>
+								</Column>
+								<Column>
+									<div style={commonDesc}>
+										Opportunities for creative development Opportunities for creative development
+									</div>
+								</Column>
+							</Row>
+
+							<Row>
+								<Column
 									style={{
-										display: 'inline-block',
-										width: '4px',
-										height: '4px',
-										marginRight: '6px',
-										padding: '8px 5.5px',
-										textAlign: 'center',
+										width: '15px',
 										verticalAlign: 'top',
 									}}
 								>
 									<div
 										style={{
-											display: 'inline-block',
-											width: '4px',
+											width: '15px',
 											height: '4px',
-											backgroundColor: '#D8DDE3',
-											borderRadius: '50%',
+											marginRight: '6px',
+											padding: '8px 0',
+											textAlign: 'center',
 										}}
-									/>
-								</div>
-								<div style={commonDesc}>Creative development</div>
-							</div>
+									>
+										<div
+											style={{
+												width: '4px',
+												height: '4px',
+												margin: '0 auto',
+												backgroundColor: '#D8DDE3',
+												borderRadius: '50%',
+											}}
+										/>
+									</div>
+								</Column>
+								<Column>
+									<div style={commonDesc}>Creative development</div>
+								</Column>
+							</Row>
+
 							<Button style={{ marginTop: '12px' }} href="https://baidu.com" target="_blank">
 								<span style={applyButtonText}>Apply</span>
 							</Button>
 						</div>
 						<div style={{ height: '12px' }} />
 						<div style={card}>
-							<Row>
+							<Row
+								style={{
+									marginBottom: '12px',
+								}}
+							>
 								<Column>
 									<div
 										style={{
@@ -430,79 +459,103 @@ const JobRecommend = () => {
 								</Column>
 							</Row>
 
-							<div style={{ fontSize: '0px', marginBottom: '12px' }}>
-								<div
+							<Row
+								style={{
+									marginBottom: '12px',
+								}}
+							>
+								<Column
 									style={{
-										display: 'inline-block',
-										height: '15px',
-										marginRight: '6px',
-										padding: '2.5px 0',
+										width: '15px',
 										verticalAlign: 'top',
 									}}
 								>
-									<Img
+									<div
 										style={{
-											display: 'inline-block',
+											height: '15px',
+											marginRight: '6px',
+											padding: '2.5px 0',
 										}}
-										src="https://img.offertoday.com/static/file/2024/l9xbn9tykp1728725429370.png.webp"
-										alt="salary"
-										width="15"
-										height="15"
-									/>
-								</div>
-								<div style={commonDesc}>HK $20K-50K/Monthly·Salary negotiable</div>
-							</div>
+									>
+										<Img
+											src="https://img.offertoday.com/static/file/2024/l9xbn9tykp1728725429370.png.webp"
+											alt="salary"
+											width="15"
+											height="15"
+										/>
+									</div>
+								</Column>
+								<Column>
+									<div style={commonDesc}>HK $20K-50K/Monthly·Salary negotiable</div>
+								</Column>
+							</Row>
 
-							<div style={{ fontSize: '0px' }}>
-								<div
+							<Row>
+								<Column
 									style={{
-										display: 'inline-block',
-										width: '4px',
-										height: '4px',
-										marginRight: '6px',
-										padding: '8px 5.5px',
-										textAlign: 'center',
+										width: '15px',
 										verticalAlign: 'top',
 									}}
 								>
 									<div
 										style={{
-											display: 'inline-block',
-											width: '4px',
+											width: '15px',
 											height: '4px',
-											backgroundColor: '#D8DDE3',
-											borderRadius: '50%',
+											marginRight: '6px',
+											padding: '8px 0',
+											textAlign: 'center',
 										}}
-									/>
-								</div>
-								<div style={commonDesc}>
-									Opportunities for creative development Opportunities for creative development
-								</div>
-							</div>
-							<div style={{ fontSize: '0px' }}>
-								<div
+									>
+										<div
+											style={{
+												width: '4px',
+												height: '4px',
+												margin: '0 auto',
+												backgroundColor: '#D8DDE3',
+												borderRadius: '50%',
+											}}
+										/>
+									</div>
+								</Column>
+								<Column>
+									<div style={commonDesc}>
+										Opportunities for creative development Opportunities for creative development
+									</div>
+								</Column>
+							</Row>
+
+							<Row>
+								<Column
 									style={{
-										display: 'inline-block',
-										width: '4px',
-										height: '4px',
-										marginRight: '6px',
-										padding: '8px 5.5px',
-										textAlign: 'center',
+										width: '15px',
 										verticalAlign: 'top',
 									}}
 								>
 									<div
 										style={{
-											display: 'inline-block',
-											width: '4px',
+											width: '15px',
 											height: '4px',
-											backgroundColor: '#D8DDE3',
-											borderRadius: '50%',
+											marginRight: '6px',
+											padding: '8px 0',
+											textAlign: 'center',
 										}}
-									/>
-								</div>
-								<div style={commonDesc}>Creative development</div>
-							</div>
+									>
+										<div
+											style={{
+												width: '4px',
+												height: '4px',
+												margin: '0 auto',
+												backgroundColor: '#D8DDE3',
+												borderRadius: '50%',
+											}}
+										/>
+									</div>
+								</Column>
+								<Column>
+									<div style={commonDesc}>Creative development</div>
+								</Column>
+							</Row>
+
 							<Button style={{ marginTop: '12px' }} href="https://baidu.com" target="_blank">
 								<span style={applyButtonText}>Apply</span>
 							</Button>
