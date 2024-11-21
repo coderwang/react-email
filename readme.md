@@ -15,15 +15,16 @@ pnpm dev
 > (2) 网易邮箱大师，不生效（未知）
 >
 > 方法二：`whiteSpace: 'nowrap !important'`  
-> (1) 网易邮箱大师，不生效（未知）
+> (1) 网易邮箱大师，不生效（未知）  
+> PS: table 布局下别用，文字超长会超出盒子
 >
-> 方法三：`display: '-webkit-box' lineClamp: 1,WebkitLineClamp: 1,WebkitBoxOrient: 'vertical' as const`  
+> 方法三：`display: '-webkit-box', lineClamp: 1, WebkitLineClamp: 1, WebkitBoxOrient: 'vertical' as const`  
 > (1) gmail，不生效（会自动去掉 lineClamp、WebkitLineClamp、WebkitBoxOrient 等属性）  
 > (2) outlook，不生效（会自动去掉 display: -webkit-box、lineClamp、WebkitLineClamp、WebkitBoxOrient 等属性）
 
 2、多行文本显示省略号
 
-> `display: '-webkit-box' lineClamp: 2,WebkitLineClamp: 2,WebkitBoxOrient: 'vertical' as const`  
+> `display: '-webkit-box', lineClamp: 2, WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' as const`  
 > (1) gmail，不生效（原因如上）  
 > (2) outlook，不生效（原因如上）
 

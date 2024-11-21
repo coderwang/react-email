@@ -42,12 +42,6 @@ const card = {
 	backgroundColor: '#FBFBFC',
 };
 
-const contactInfo = {
-	display: 'inline-block',
-	verticalAlign: 'middle',
-	maxWidth: 'calc(100% - 54px)',
-};
-
 const companyName = {
 	color: '#171D26',
 	fontFamily: 'SF Pro',
@@ -57,7 +51,10 @@ const companyName = {
 	lineHeight: 'normal',
 	overflow: 'hidden',
 	textOverflow: 'ellipsis',
-	whiteSpace: 'nowrap !important',
+	display: '-webkit-box',
+	lineClamp: 1,
+	WebkitLineClamp: 1,
+	WebkitBoxOrient: 'vertical' as const,
 };
 
 const contactName = {
@@ -240,20 +237,20 @@ const JobRecommend = () => {
 							"Product Manager Product Manager Product Manager Produc..."
 						</div>
 						<div style={{ ...card, marginBottom: '36px' }}>
-							<div style={{ fontSize: '0px', marginBottom: '12px' }}>
-								<Img
-									style={{
-										display: 'inline-block',
-										marginRight: '14px',
-										verticalAlign: 'middle',
-										borderRadius: '50%',
-									}}
-									src="https://pic.offertodayhk.com/server/avatar/20240820/cc3b12d6f96645f18d8d1a4aa8b37d4a_s.jpeg.webp"
-									alt="company logo"
-									width="40"
-									height="40"
-								/>
-								<div style={contactInfo}>
+							<Row style={{ marginBottom: '12px' }}>
+								<Column style={{ verticalAlign: 'middle', width: '40px' }}>
+									<Img
+										style={{
+											marginRight: '14px',
+											borderRadius: '50%',
+										}}
+										src="https://pic.offertodayhk.com/server/avatar/20240820/cc3b12d6f96645f18d8d1a4aa8b37d4a_s.jpeg.webp"
+										alt="company logo"
+										width="40"
+										height="40"
+									/>
+								</Column>
+								<Column>
 									<div style={companyName}>
 										OfferToday OfferToday OfferToday OfferToday OfferToday OfferToday OfferToday
 										OfferToday OfferToday
@@ -263,8 +260,8 @@ const JobRecommend = () => {
 										<div style={divider} />
 										<div style={contactTitle}>OfferToday</div>
 									</div>
-								</div>
-							</div>
+								</Column>
+							</Row>
 							<div style={contactText}>
 								Hello, your profile aligns well with our position. Could you please provide your
 								contact information and resume?
