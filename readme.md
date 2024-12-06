@@ -45,3 +45,5 @@ pnpm dev
 10、手机端浏览器 gmail 和 outlook 不支持写 style 标签，会自动删除
 
 11、Column 组件和它的最外层子元素不要写左右 margin，在手机端浏览器会失效
+
+12、Button 组件内部包裹 div 的话，div 部分地方可能无法点击，需要把 div 再用 Section 组件包裹一下
