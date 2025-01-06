@@ -38,7 +38,7 @@ pnpm dev
 
 7、不要用 flex 布局，float 浮动，position 定位等
 
-8、Button 内的文字想要垂直居中，需要将内部的文字用 span 包裹
+8、Button 内的文字想要垂直居中，需要将内部的文字用 span 包裹，否则在网易邮箱下面会出问题
 
 9、outlook 不支持 calc 函数
 
@@ -46,4 +46,6 @@ pnpm dev
 
 11、Column 组件和它的最外层子元素不要写左右 margin，在手机端浏览器会失效
 
-12、Button 组件内部包裹 div 的话，div 部分地方可能无法点击，需要把 div 再用 Section 组件包裹一下
+12、Button 组件内部包裹 div 的话，div 部分地方可能无法点击（可能是由于 div 内部又有一层 Button 组件）或出现一些奇奇怪怪的问题，需要把 div 再用 Section 组件包裹一下
+
+13、Row 组件不要加 padding，否则在手机端浏览器下 outlook 会出现奇怪的问题，可以用 div 包裹 Row 组件，然后给 div 加 padding
