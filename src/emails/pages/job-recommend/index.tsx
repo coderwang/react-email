@@ -223,361 +223,363 @@ const greeting = {
 const JobRecommend = () => {
 	return (
 		<Html>
-			<Body>
-				<div style={{ maxWidth: '600px', margin: '0 auto' }}>
-					<div style={{ height: '8px', marginBottom: '20px', backgroundColor: '#06605A' }}></div>
-					<div style={{ padding: '0 16px' }}>
-						<ImgWithText wrapperStyle={{ marginBottom: '28px' }} />
-						<div style={userName}>Dear, recevier name</div>
-						<div style={replyText}>You got a new reply</div>
-						<div style={replyContent}>
-							"Product Manager Product Manager Product Manager Produc..."
-						</div>
-						<div style={{ ...card, marginBottom: '36px' }}>
-							<Row style={{ marginBottom: '12px' }}>
-								<Column style={{ verticalAlign: 'middle', width: '54px' }}>
-									<Img
-										style={{
-											borderRadius: '50%',
-										}}
-										src="https://pic.offertodayhk.com/server/avatar/20240820/cc3b12d6f96645f18d8d1a4aa8b37d4a_s.jpeg.webp"
-										alt="company logo"
-										width="40"
-										height="40"
-									/>
-								</Column>
-								<Column>
-									<div style={companyName}>
-										OfferToday OfferToday OfferToday OfferToday OfferToday OfferToday OfferToday
-										OfferToday OfferToday
-									</div>
-									<div>
-										<div style={contactName}>OfferToday</div>
-										<div style={divider} />
-										<div style={contactTitle}>OfferToday</div>
-									</div>
-								</Column>
-							</Row>
-							<div style={contactText}>
-								Hello, your profile aligns well with our position. Could you please provide your
-								contact information and resume?
+			<Body style={{ backgroundColor: '#f5f5f5' }}>
+				<div style={{ backgroundColor: '#f5f5f5', width: '100%' }}>
+					<div style={{ width: '600px', margin: '0 auto', backgroundColor: '#fff' }}>
+						<div style={{ height: '8px', marginBottom: '20px', backgroundColor: '#06605A' }}></div>
+						<div style={{ padding: '0 16px' }}>
+							<ImgWithText wrapperStyle={{ marginBottom: '28px' }} />
+							<div style={userName}>Dear, recevier name</div>
+							<div style={replyText}>You got a new reply</div>
+							<div style={replyContent}>
+								"Product Manager Product Manager Product Manager Produc..."
 							</div>
-							<BasicButton
-								wrapperStyle={{
-									marginBottom: '21px',
-								}}
-								href="https://baidu.com"
-							>
-								Reply
-							</BasicButton>
-							<div style={unreadMsg}>
-								<span style={unreadCount}>Unread messages (999+)</span>
-								<Button href="https://baidu.com" target="_blank">
-									<span style={unreadCheck}>Check Now</span>
+							<div style={{ ...card, marginBottom: '36px' }}>
+								<Row style={{ marginBottom: '12px' }}>
+									<Column style={{ verticalAlign: 'middle', width: '54px' }}>
+										<Img
+											style={{
+												borderRadius: '50%',
+											}}
+											src="https://pic.offertodayhk.com/server/avatar/20240820/cc3b12d6f96645f18d8d1a4aa8b37d4a_s.jpeg.webp"
+											alt="company logo"
+											width="40"
+											height="40"
+										/>
+									</Column>
+									<Column>
+										<div style={companyName}>
+											OfferToday OfferToday OfferToday OfferToday OfferToday OfferToday OfferToday
+											OfferToday OfferToday
+										</div>
+										<div>
+											<div style={contactName}>OfferToday</div>
+											<div style={divider} />
+											<div style={contactTitle}>OfferToday</div>
+										</div>
+									</Column>
+								</Row>
+								<div style={contactText}>
+									Hello, your profile aligns well with our position. Could you please provide your
+									contact information and resume?
+								</div>
+								<BasicButton
+									wrapperStyle={{
+										marginBottom: '21px',
+									}}
+									href="https://baidu.com"
+								>
+									Reply
+								</BasicButton>
+								<div style={unreadMsg}>
+									<span style={unreadCount}>Unread messages (999+)</span>
+									<Button href="https://baidu.com" target="_blank">
+										<span style={unreadCheck}>Check Now</span>
+									</Button>
+								</div>
+							</div>
+							<div style={{ fontSize: '0px', textAlign: 'center' }}>
+								<Img
+									style={{
+										display: 'inline-block',
+										marginRight: '8px',
+										verticalAlign: 'middle',
+									}}
+									src="https://img.offertoday.com/static/file/2024/wxsrdx6ej61728899325301.png"
+									alt="logo"
+									width="26"
+									height="26"
+								/>
+								<div style={jobRecommend}>Job Recommendations</div>
+							</div>
+							<div style={jobRecommendDesc}>Apply now and land your dream job!</div>
+							<div style={card}>
+								<Row
+									style={{
+										marginBottom: '12px',
+									}}
+								>
+									<Column>
+										<div
+											style={{
+												marginRight: '28px',
+											}}
+										>
+											<div style={jobTitle}>
+												Product Manager Lead1 Product Manager Lead2 Product Manager Lead3 Product
+												Manager Lead4 Product Manager Lead5
+											</div>
+											<div style={jobCompany}>
+												Tesla1 Tesla2 Tesla3 Tesla4 Tesla5 Tesla6 Tesla7 Tesla8 Tesla9 Tesla10
+											</div>
+										</div>
+									</Column>
+									<Column style={{ verticalAlign: 'top', width: '40px' }}>
+										<Img
+											style={{
+												borderRadius: '6px',
+											}}
+											src="https://pic.offertodayhk.com/server/avatar/20240820/8c374c40ed34453f864d1d94c44ff3f0_s.jpg.webp"
+											alt="company logo"
+											width="40"
+											height="40"
+										/>
+									</Column>
+								</Row>
+								<Row
+									style={{
+										marginBottom: '12px',
+									}}
+								>
+									<Column
+										style={{
+											width: '21px',
+											verticalAlign: 'top',
+										}}
+									>
+										<div
+											style={{
+												width: '15px',
+												height: '15px',
+												padding: '2.5px 0',
+											}}
+										>
+											<Img
+												style={{ borderRadius: '50%' }}
+												src="https://img.offertoday.com/static/file/2024/l9xbn9tykp1728725429370.png.webp"
+												alt="salary"
+												width="15"
+												height="15"
+											/>
+										</div>
+									</Column>
+									<Column>
+										<div style={commonDesc}>
+											HK $20K-50K/Monthly·Salary negotiable or HK $300-800/Daily·Salary negotiable
+										</div>
+									</Column>
+								</Row>
+
+								<Row>
+									<Column
+										style={{
+											width: '21px',
+											verticalAlign: 'top',
+										}}
+									>
+										<div
+											style={{
+												width: '15px',
+												height: '4px',
+												padding: '8px 0',
+												textAlign: 'center',
+											}}
+										>
+											<div
+												style={{
+													width: '4px',
+													height: '4px',
+													margin: '0 auto',
+													backgroundColor: '#D8DDE3',
+													borderRadius: '50%',
+												}}
+											/>
+										</div>
+									</Column>
+									<Column>
+										<div style={commonDesc}>
+											Opportunities for creative development Opportunities for creative development
+										</div>
+									</Column>
+								</Row>
+
+								<Row>
+									<Column
+										style={{
+											width: '21px',
+											verticalAlign: 'top',
+										}}
+									>
+										<div
+											style={{
+												width: '15px',
+												height: '4px',
+												padding: '8px 0',
+												textAlign: 'center',
+											}}
+										>
+											<div
+												style={{
+													width: '4px',
+													height: '4px',
+													margin: '0 auto',
+													backgroundColor: '#D8DDE3',
+													borderRadius: '50%',
+												}}
+											/>
+										</div>
+									</Column>
+									<Column>
+										<div style={commonDesc}>Creative development</div>
+									</Column>
+								</Row>
+
+								<Button style={{ marginTop: '12px' }} href="https://baidu.com" target="_blank">
+									<span style={applyButtonText}>Apply</span>
 								</Button>
 							</div>
-						</div>
-						<div style={{ fontSize: '0px', textAlign: 'center' }}>
-							<Img
-								style={{
-									display: 'inline-block',
-									marginRight: '8px',
-									verticalAlign: 'middle',
-								}}
-								src="https://img.offertoday.com/static/file/2024/wxsrdx6ej61728899325301.png"
-								alt="logo"
-								width="26"
-								height="26"
-							/>
-							<div style={jobRecommend}>Job Recommendations</div>
-						</div>
-						<div style={jobRecommendDesc}>Apply now and land your dream job!</div>
-						<div style={card}>
-							<Row
-								style={{
-									marginBottom: '12px',
-								}}
-							>
-								<Column>
-									<div
-										style={{
-											marginRight: '28px',
-										}}
-									>
-										<div style={jobTitle}>
-											Product Manager Lead1 Product Manager Lead2 Product Manager Lead3 Product
-											Manager Lead4 Product Manager Lead5
+							<div style={{ height: '12px' }} />
+							<div style={card}>
+								<Row
+									style={{
+										marginBottom: '12px',
+									}}
+								>
+									<Column>
+										<div
+											style={{
+												marginRight: '28px',
+											}}
+										>
+											<div style={jobTitle}>Product Manager Lead</div>
+											<div style={jobCompany}>Tesla</div>
 										</div>
-										<div style={jobCompany}>
-											Tesla1 Tesla2 Tesla3 Tesla4 Tesla5 Tesla6 Tesla7 Tesla8 Tesla9 Tesla10
+									</Column>
+									<Column style={{ verticalAlign: 'top', width: '40px' }}>
+										<Img
+											style={{
+												borderRadius: '6px',
+											}}
+											src="https://pic.offertodayhk.com/server/avatar/20240822/714cfb40e4f94d02b2a30f4cc3924c4c_s.jpg.webp"
+											alt="company logo"
+											width="40"
+											height="40"
+										/>
+									</Column>
+								</Row>
+
+								<Row
+									style={{
+										marginBottom: '12px',
+									}}
+								>
+									<Column
+										style={{
+											width: '21px',
+											verticalAlign: 'top',
+										}}
+									>
+										<div
+											style={{
+												width: '15px',
+												height: '15px',
+												padding: '2.5px 0',
+											}}
+										>
+											<Img
+												style={{ borderRadius: '50%' }}
+												src="https://img.offertoday.com/static/file/2024/l9xbn9tykp1728725429370.png.webp"
+												alt="salary"
+												width="15"
+												height="15"
+											/>
 										</div>
-									</div>
-								</Column>
-								<Column style={{ verticalAlign: 'top', width: '40px' }}>
-									<Img
+									</Column>
+									<Column>
+										<div style={commonDesc}>HK $20K-50K/Monthly·Salary negotiable</div>
+									</Column>
+								</Row>
+
+								<Row>
+									<Column
 										style={{
-											borderRadius: '6px',
-										}}
-										src="https://pic.offertodayhk.com/server/avatar/20240820/8c374c40ed34453f864d1d94c44ff3f0_s.jpg.webp"
-										alt="company logo"
-										width="40"
-										height="40"
-									/>
-								</Column>
-							</Row>
-							<Row
-								style={{
-									marginBottom: '12px',
-								}}
-							>
-								<Column
-									style={{
-										width: '21px',
-										verticalAlign: 'top',
-									}}
-								>
-									<div
-										style={{
-											width: '15px',
-											height: '15px',
-											padding: '2.5px 0',
+											width: '21px',
+											verticalAlign: 'top',
 										}}
 									>
+										<div
+											style={{
+												width: '15px',
+												height: '4px',
+												padding: '8px 0',
+												textAlign: 'center',
+											}}
+										>
+											<div
+												style={{
+													width: '4px',
+													height: '4px',
+													margin: '0 auto',
+													backgroundColor: '#D8DDE3',
+													borderRadius: '50%',
+												}}
+											/>
+										</div>
+									</Column>
+									<Column>
+										<div style={commonDesc}>
+											Opportunities for creative development Opportunities for creative development
+										</div>
+									</Column>
+								</Row>
+
+								<Row>
+									<Column
+										style={{
+											width: '21px',
+											verticalAlign: 'top',
+										}}
+									>
+										<div
+											style={{
+												width: '15px',
+												height: '4px',
+												padding: '8px 0',
+												textAlign: 'center',
+											}}
+										>
+											<div
+												style={{
+													width: '4px',
+													height: '4px',
+													margin: '0 auto',
+													backgroundColor: '#D8DDE3',
+													borderRadius: '50%',
+												}}
+											/>
+										</div>
+									</Column>
+									<Column>
+										<div style={commonDesc}>Creative development</div>
+									</Column>
+								</Row>
+
+								<Button style={{ marginTop: '12px' }} href="https://baidu.com" target="_blank">
+									<span style={applyButtonText}>Apply</span>
+								</Button>
+							</div>
+							<div style={{ textAlign: 'center', marginTop: '24px', marginBottom: '36px' }}>
+								<Button href="https://baidu.com" target="_blank">
+									<div style={moreJobsBtn}>
+										<span style={moreJobsText}>View More Jobs</span>
 										<Img
-											style={{ borderRadius: '50%' }}
-											src="https://img.offertoday.com/static/file/2024/l9xbn9tykp1728725429370.png.webp"
-											alt="salary"
-											width="15"
-											height="15"
-										/>
-									</div>
-								</Column>
-								<Column>
-									<div style={commonDesc}>
-										HK $20K-50K/Monthly·Salary negotiable or HK $300-800/Daily·Salary negotiable
-									</div>
-								</Column>
-							</Row>
-
-							<Row>
-								<Column
-									style={{
-										width: '21px',
-										verticalAlign: 'top',
-									}}
-								>
-									<div
-										style={{
-											width: '15px',
-											height: '4px',
-											padding: '8px 0',
-											textAlign: 'center',
-										}}
-									>
-										<div
 											style={{
-												width: '4px',
-												height: '4px',
-												margin: '0 auto',
-												backgroundColor: '#D8DDE3',
-												borderRadius: '50%',
+												display: 'inline-block',
+												marginLeft: '8px',
+												verticalAlign: 'middle',
 											}}
+											src="https://img.offertoday.com/static/file/2024/ik1ig5frwf1723699419099.png"
+											alt="arrow right"
+											width="12"
+											height="12"
 										/>
 									</div>
-								</Column>
-								<Column>
-									<div style={commonDesc}>
-										Opportunities for creative development Opportunities for creative development
-									</div>
-								</Column>
-							</Row>
-
-							<Row>
-								<Column
-									style={{
-										width: '21px',
-										verticalAlign: 'top',
-									}}
-								>
-									<div
-										style={{
-											width: '15px',
-											height: '4px',
-											padding: '8px 0',
-											textAlign: 'center',
-										}}
-									>
-										<div
-											style={{
-												width: '4px',
-												height: '4px',
-												margin: '0 auto',
-												backgroundColor: '#D8DDE3',
-												borderRadius: '50%',
-											}}
-										/>
-									</div>
-								</Column>
-								<Column>
-									<div style={commonDesc}>Creative development</div>
-								</Column>
-							</Row>
-
-							<Button style={{ marginTop: '12px' }} href="https://baidu.com" target="_blank">
-								<span style={applyButtonText}>Apply</span>
-							</Button>
+								</Button>
+							</div>
+							<div style={greeting}>Sincerely yours, </div>
+							<div style={{ ...greeting, marginBottom: '40px' }}>OfferToday Team</div>
+							<Footer />
 						</div>
-						<div style={{ height: '12px' }} />
-						<div style={card}>
-							<Row
-								style={{
-									marginBottom: '12px',
-								}}
-							>
-								<Column>
-									<div
-										style={{
-											marginRight: '28px',
-										}}
-									>
-										<div style={jobTitle}>Product Manager Lead</div>
-										<div style={jobCompany}>Tesla</div>
-									</div>
-								</Column>
-								<Column style={{ verticalAlign: 'top', width: '40px' }}>
-									<Img
-										style={{
-											borderRadius: '6px',
-										}}
-										src="https://pic.offertodayhk.com/server/avatar/20240822/714cfb40e4f94d02b2a30f4cc3924c4c_s.jpg.webp"
-										alt="company logo"
-										width="40"
-										height="40"
-									/>
-								</Column>
-							</Row>
-
-							<Row
-								style={{
-									marginBottom: '12px',
-								}}
-							>
-								<Column
-									style={{
-										width: '21px',
-										verticalAlign: 'top',
-									}}
-								>
-									<div
-										style={{
-											width: '15px',
-											height: '15px',
-											padding: '2.5px 0',
-										}}
-									>
-										<Img
-											style={{ borderRadius: '50%' }}
-											src="https://img.offertoday.com/static/file/2024/l9xbn9tykp1728725429370.png.webp"
-											alt="salary"
-											width="15"
-											height="15"
-										/>
-									</div>
-								</Column>
-								<Column>
-									<div style={commonDesc}>HK $20K-50K/Monthly·Salary negotiable</div>
-								</Column>
-							</Row>
-
-							<Row>
-								<Column
-									style={{
-										width: '21px',
-										verticalAlign: 'top',
-									}}
-								>
-									<div
-										style={{
-											width: '15px',
-											height: '4px',
-											padding: '8px 0',
-											textAlign: 'center',
-										}}
-									>
-										<div
-											style={{
-												width: '4px',
-												height: '4px',
-												margin: '0 auto',
-												backgroundColor: '#D8DDE3',
-												borderRadius: '50%',
-											}}
-										/>
-									</div>
-								</Column>
-								<Column>
-									<div style={commonDesc}>
-										Opportunities for creative development Opportunities for creative development
-									</div>
-								</Column>
-							</Row>
-
-							<Row>
-								<Column
-									style={{
-										width: '21px',
-										verticalAlign: 'top',
-									}}
-								>
-									<div
-										style={{
-											width: '15px',
-											height: '4px',
-											padding: '8px 0',
-											textAlign: 'center',
-										}}
-									>
-										<div
-											style={{
-												width: '4px',
-												height: '4px',
-												margin: '0 auto',
-												backgroundColor: '#D8DDE3',
-												borderRadius: '50%',
-											}}
-										/>
-									</div>
-								</Column>
-								<Column>
-									<div style={commonDesc}>Creative development</div>
-								</Column>
-							</Row>
-
-							<Button style={{ marginTop: '12px' }} href="https://baidu.com" target="_blank">
-								<span style={applyButtonText}>Apply</span>
-							</Button>
-						</div>
-						<div style={{ textAlign: 'center', marginTop: '24px', marginBottom: '36px' }}>
-							<Button href="https://baidu.com" target="_blank">
-								<div style={moreJobsBtn}>
-									<span style={moreJobsText}>View More Jobs</span>
-									<Img
-										style={{
-											display: 'inline-block',
-											marginLeft: '8px',
-											verticalAlign: 'middle',
-										}}
-										src="https://img.offertoday.com/static/file/2024/ik1ig5frwf1723699419099.png"
-										alt="arrow right"
-										width="12"
-										height="12"
-									/>
-								</div>
-							</Button>
-						</div>
-						<div style={greeting}>Sincerely yours, </div>
-						<div style={{ ...greeting, marginBottom: '40px' }}>OfferToday Team</div>
-						<Footer />
 					</div>
 				</div>
 			</Body>
