@@ -4,7 +4,7 @@ import Footer from '../../../components/Footer';
 import ImgWithText from '../../../components/ImgWithText';
 import BasicButton from '../../../components/BasicButton';
 
-const userName = {
+const userName: React.CSSProperties = {
 	margin: '0 0 36px 0',
 	color: '#171D26',
 	fontFamily: 'SF Pro',
@@ -14,7 +14,7 @@ const userName = {
 	lineHeight: '24px',
 };
 
-const replyText = {
+const replyText: React.CSSProperties = {
 	color: '#171D26',
 	fontFamily: 'SF Pro',
 	fontSize: '28px',
@@ -24,7 +24,7 @@ const replyText = {
 	textAlign: 'center' as const,
 };
 
-const replyContent = {
+const replyContent: React.CSSProperties = {
 	margin: '0 0 24px 0',
 	color: '#207A74',
 	fontFamily: 'SF Pro',
@@ -35,14 +35,14 @@ const replyContent = {
 	textAlign: 'center' as const,
 };
 
-const card = {
+const card: React.CSSProperties = {
 	padding: '24px 20px',
 	border: '1px solid #D8DDE3',
 	borderRadius: '12px',
 	backgroundColor: '#FBFBFC',
 };
 
-const companyName = {
+const companyName: React.CSSProperties = {
 	color: '#171D26',
 	fontFamily: 'SF Pro',
 	fontSize: '18px',
@@ -57,7 +57,7 @@ const companyName = {
 	WebkitBoxOrient: 'vertical' as const,
 };
 
-const contactName = {
+const contactName: React.CSSProperties = {
 	display: 'inline-block',
 	color: '#363F4D',
 	fontFamily: 'SF Pro',
@@ -67,7 +67,7 @@ const contactName = {
 	lineHeight: '19.5px',
 };
 
-const divider = {
+const divider: React.CSSProperties = {
 	display: 'inline-block',
 	width: '1px',
 	height: '12px',
@@ -75,7 +75,7 @@ const divider = {
 	backgroundColor: '#D8DDE3',
 };
 
-const contactTitle = {
+const contactTitle: React.CSSProperties = {
 	display: 'inline-block',
 	color: '#363F4D',
 	fontFamily: 'SF Pro',
@@ -85,7 +85,7 @@ const contactTitle = {
 	lineHeight: '19.5px',
 };
 
-const contactText = {
+const contactText: React.CSSProperties = {
 	marginLeft: '20px',
 	marginBottom: '24px',
 	padding: '12px 16px',
@@ -99,11 +99,11 @@ const contactText = {
 	borderRadius: '0px 10px 10px 10px',
 };
 
-const unreadMsg = {
+const unreadMsg: React.CSSProperties = {
 	textAlign: 'center' as const,
 };
 
-const unreadCount = {
+const unreadCount: React.CSSProperties = {
 	marginRight: '8px',
 	color: '#4B5363',
 	fontFamily: 'SF Pro',
@@ -113,7 +113,7 @@ const unreadCount = {
 	lineHeight: '19.5px',
 };
 
-const unreadCheck = {
+const unreadCheck: React.CSSProperties = {
 	color: '#207A74',
 	fontFamily: 'SF Pro',
 	fontSize: '16px',
@@ -123,7 +123,7 @@ const unreadCheck = {
 	textDecoration: 'underline',
 };
 
-const jobRecommend = {
+const jobRecommend: React.CSSProperties = {
 	display: 'inline-block',
 	color: '#06605A',
 	fontFamily: 'SF Pro',
@@ -134,7 +134,7 @@ const jobRecommend = {
 	verticalAlign: 'middle',
 };
 
-const jobRecommendDesc = {
+const jobRecommendDesc: React.CSSProperties = {
 	marginBottom: '24px',
 	color: '#8D97A6',
 	fontFamily: 'SF Pro',
@@ -145,7 +145,7 @@ const jobRecommendDesc = {
 	textAlign: 'center' as const,
 };
 
-const jobTitle = {
+const jobTitle: React.CSSProperties = {
 	marginBottom: '8px',
 	color: '#171D26',
 	fontFamily: 'SF Pro',
@@ -161,7 +161,7 @@ const jobTitle = {
 	WebkitBoxOrient: 'vertical' as const,
 };
 
-const jobCompany = {
+const jobCompany: React.CSSProperties = {
 	color: '#363F4D',
 	fontFamily: 'SF Pro',
 	fontSize: '16px',
@@ -170,7 +170,16 @@ const jobCompany = {
 	lineHeight: '19.5px',
 };
 
-const commonDesc = {
+const label: React.CSSProperties = {
+	paddingRight: '16px',
+	color: '#666',
+	fontSize: '14px',
+	fontStyle: 'normal',
+	fontWeight: 500,
+	lineHeight: '21px',
+};
+
+const commonDesc: React.CSSProperties = {
 	color: '#363F4D',
 	fontFamily: 'SF Pro',
 	fontSize: '14px',
@@ -179,7 +188,7 @@ const commonDesc = {
 	lineHeight: '20px',
 };
 
-const applyButtonText = {
+const applyButtonText: React.CSSProperties = {
 	display: 'inline-block',
 	width: '137px',
 	height: '36px',
@@ -194,14 +203,14 @@ const applyButtonText = {
 	textAlign: 'center' as const,
 };
 
-const moreJobsBtn = {
+const moreJobsBtn: React.CSSProperties = {
 	height: '48px',
 	padding: '0 20px',
 	borderRadius: '24px',
 	background: '#06605A',
 };
 
-const moreJobsText = {
+const moreJobsText: React.CSSProperties = {
 	color: '#FFFFFF',
 	fontFamily: 'PingFang SC',
 	fontSize: '16px',
@@ -211,7 +220,7 @@ const moreJobsText = {
 	verticalAlign: 'middle',
 };
 
-const greeting = {
+const greeting: React.CSSProperties = {
 	color: '#171D26',
 	fontFamily: 'SF Pro',
 	fontSize: '16px',
@@ -458,101 +467,88 @@ const JobRecommend = () => {
 									</Column>
 								</Row>
 
-								<Row
-									style={{
-										marginBottom: '12px',
-									}}
-								>
-									<Column
+								<div style={{ fontSize: '0px' }}>
+									<div
 										style={{
-											width: '21px',
-											verticalAlign: 'top',
+											display: 'inline-block',
+											width: '263px',
+											padding: '4px 0',
+											verticalAlign: 'middle',
 										}}
 									>
-										<div
-											style={{
-												width: '15px',
-												height: '15px',
-												padding: '2.5px 0',
-											}}
-										>
-											<Img
-												style={{ borderRadius: '50%' }}
-												src="https://img.offertoday.com/static/file/2024/l9xbn9tykp1728725429370.png.webp"
-												alt="salary"
-												width="15"
-												height="15"
-											/>
-										</div>
-									</Column>
-									<Column>
-										<div style={commonDesc}>HK $20K-50K/Monthly·Salary negotiable</div>
-									</Column>
-								</Row>
-
-								<Row>
-									<Column
+										<Row>
+											<Column style={{ width: '24px' }}>
+												<Img
+													src="https://img.offertodayhk.com/static/file/2024/cpb8o8fz4g1734071214862.png"
+													alt="logo"
+													width={16}
+													height={16}
+												/>
+											</Column>
+											<Column style={label}>15 years of experience</Column>
+										</Row>
+									</div>
+									<div
 										style={{
-											width: '21px',
-											verticalAlign: 'top',
+											display: 'inline-block',
+											width: '263px',
+											padding: '4px 0',
+											verticalAlign: 'middle',
 										}}
 									>
-										<div
-											style={{
-												width: '15px',
-												height: '4px',
-												padding: '8px 0',
-												textAlign: 'center',
-											}}
-										>
-											<div
-												style={{
-													width: '4px',
-													height: '4px',
-													margin: '0 auto',
-													backgroundColor: '#D8DDE3',
-													borderRadius: '50%',
-												}}
-											/>
-										</div>
-									</Column>
-									<Column>
-										<div style={commonDesc}>
-											Opportunities for creative development Opportunities for creative development
-										</div>
-									</Column>
-								</Row>
-
-								<Row>
-									<Column
+										<Row>
+											<Column style={{ width: '24px' }}>
+												<Img
+													src="https://img.offertodayhk.com/static/file/2024/cpb8o8fz4g1734071214862.png"
+													alt="logo"
+													width={16}
+													height={16}
+												/>
+											</Column>
+											<Column style={label}>Master</Column>
+										</Row>
+									</div>
+									<div
 										style={{
-											width: '21px',
-											verticalAlign: 'top',
+											display: 'inline-block',
+											width: '263px',
+											padding: '4px 0',
+											verticalAlign: 'middle',
 										}}
 									>
-										<div
-											style={{
-												width: '15px',
-												height: '4px',
-												padding: '8px 0',
-												textAlign: 'center',
-											}}
-										>
-											<div
-												style={{
-													width: '4px',
-													height: '4px',
-													margin: '0 auto',
-													backgroundColor: '#D8DDE3',
-													borderRadius: '50%',
-												}}
-											/>
-										</div>
-									</Column>
-									<Column>
-										<div style={commonDesc}>Creative development</div>
-									</Column>
-								</Row>
+										<Row>
+											<Column style={{ width: '24px' }}>
+												<Img
+													src="https://img.offertodayhk.com/static/file/2024/cpb8o8fz4g1734071214862.png"
+													alt="logo"
+													width={16}
+													height={16}
+												/>
+											</Column>
+											<Column style={label}>HK $20K-30K/Month</Column>
+										</Row>
+									</div>
+									<div
+										style={{
+											display: 'inline-block',
+											width: '263px',
+											padding: '4px 0',
+											verticalAlign: 'middle',
+										}}
+									>
+										<Row>
+											<Column style={{ width: '24px' }}>
+												<Img
+													src="https://img.offertodayhk.com/static/file/2024/cpb8o8fz4g1734071214862.png"
+													alt="logo"
+													width={16}
+													height={16}
+												/>
+											</Column>
+											<Column style={label}>Hong Kong Resident</Column>
+										</Row>
+									</div>
+								</div>
 
 								<Button style={{ marginTop: '12px' }} href="https://baidu.com" target="_blank">
 									<span style={applyButtonText}>Apply</span>
