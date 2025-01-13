@@ -1,8 +1,9 @@
 import { Html, Body, Img, Button, Row, Column } from '@react-email/components';
-import React from 'react';
+import React, { FC } from 'react';
 import Footer from '../../../components/Footer';
 import ImgWithText from '../../../components/ImgWithText';
 import BasicButton from '../../../components/BasicButton';
+import { JobRecommendData, mockData } from './mock';
 
 const userName: React.CSSProperties = {
 	margin: '0 0 36px 0',
@@ -229,7 +230,7 @@ const greeting: React.CSSProperties = {
 	lineHeight: '24px',
 };
 
-const JobRecommend = () => {
+const JobRecommend = ({ data }: { data: JobRecommendData }) => {
 	return (
 		<Html>
 			<Body style={{ backgroundColor: '#f5f5f5' }}>
@@ -238,11 +239,9 @@ const JobRecommend = () => {
 						<div style={{ height: '8px', marginBottom: '20px', backgroundColor: '#06605A' }}></div>
 						<div style={{ padding: '0 16px' }}>
 							<ImgWithText wrapperStyle={{ marginBottom: '28px' }} />
-							<div style={userName}>Dear, recevier name</div>
+							<div style={userName}>Dear, {data.userName}</div>
 							<div style={replyText}>You got a new reply</div>
-							<div style={replyContent}>
-								"Product Manager Product Manager Product Manager Produc..."
-							</div>
+							<div style={replyContent}>"{data.jobName}"</div>
 							<div style={{ ...card, marginBottom: '36px' }}>
 								<Row style={{ marginBottom: '12px' }}>
 									<Column style={{ verticalAlign: 'middle', width: '54px' }}>
@@ -250,21 +249,18 @@ const JobRecommend = () => {
 											style={{
 												borderRadius: '50%',
 											}}
-											src="https://pic.offertodayhk.com/server/avatar/20240820/cc3b12d6f96645f18d8d1a4aa8b37d4a_s.jpeg.webp"
+											src={data.bossAvatar}
 											alt="company logo"
 											width="40"
 											height="40"
 										/>
 									</Column>
 									<Column>
-										<div style={companyName}>
-											OfferToday OfferToday OfferToday OfferToday OfferToday OfferToday OfferToday
-											OfferToday OfferToday
-										</div>
+										<div style={companyName}>{data.companyName}</div>
 										<div>
-											<div style={contactName}>OfferToday</div>
+											<div style={contactName}>{data.bossName}</div>
 											<div style={divider} />
-											<div style={contactTitle}>OfferToday</div>
+											<div style={contactTitle}>{data.bossTitle}</div>
 										</div>
 									</Column>
 								</Row>
@@ -574,13 +570,17 @@ const JobRecommend = () => {
 							</div>
 							<div style={greeting}>Sincerely yours, </div>
 							<div style={{ ...greeting, marginBottom: '40px' }}>OfferToday Team</div>
-							<Footer />
 						</div>
+						<Footer />
 					</div>
 				</div>
 			</Body>
 		</Html>
 	);
+};
+
+JobRecommend.PreviewProps = {
+	data: mockData,
 };
 
 export default JobRecommend;
