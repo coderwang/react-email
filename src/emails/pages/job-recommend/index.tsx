@@ -314,12 +314,10 @@ const JobRecommend = ({ data }: { data: JobRecommendData }) => {
 												}}
 											>
 												<div style={jobTitle}>
-													Product Manager Lead1 Product Manager Lead2 Product Manager Lead3 Product
-													Manager Lead4 Product Manager Lead5
+													CUSTOMER SERVICE ASSISTANT (SECURITY OPERATION SUPPORT) | Engineering
+													Support | Hong Kong
 												</div>
-												<div style={jobCompany}>
-													Tesla1 Tesla2 Tesla3 Tesla4 Tesla5 Tesla6 Tesla7 Tesla8 Tesla9 Tesla10
-												</div>
+												<div style={jobCompany}>Jardine Engineering Corporation · JEC</div>
 											</div>
 										</Column>
 										<Column style={{ verticalAlign: 'top', width: '40px' }}>
@@ -363,7 +361,7 @@ const JobRecommend = ({ data }: { data: JobRecommendData }) => {
 										</Column>
 										<Column>
 											<div style={commonDesc}>
-												HK $20K-50K/Monthly·Salary negotiable or HK $300-800/Daily·Salary negotiable
+												HK $20K-50K/Monthly or HK $300-800/Daily · Salary negotiable
 											</div>
 										</Column>
 									</Row>
@@ -396,8 +394,8 @@ const JobRecommend = ({ data }: { data: JobRecommendData }) => {
 										</Column>
 										<Column>
 											<div style={commonDesc}>
-												Opportunities for creative development Opportunities for creative
-												development
+												Provide customer service to our key clients by responding to their enquiries
+												in a timely and quality way
 											</div>
 										</Column>
 									</Row>
@@ -429,7 +427,7 @@ const JobRecommend = ({ data }: { data: JobRecommendData }) => {
 											</div>
 										</Column>
 										<Column>
-											<div style={commonDesc}>Creative development</div>
+											<div style={commonDesc}>Perform other ad-hoc assignments as required</div>
 										</Column>
 									</Row>
 
@@ -450,7 +448,7 @@ const JobRecommend = ({ data }: { data: JobRecommendData }) => {
 													marginRight: '28px',
 												}}
 											>
-												<div style={jobTitle}>Product Manager Lead</div>
+												<div style={jobTitle}>Deep Learning Manipulation Engineer, Tesla Bot</div>
 												<div style={jobCompany}>Tesla</div>
 											</div>
 										</Column>
@@ -505,7 +503,7 @@ const JobRecommend = ({ data }: { data: JobRecommendData }) => {
 														height={16}
 													/>
 												</Column>
-												<Column style={label}>Master</Column>
+												<Column style={label}>AI & Robotics</Column>
 											</Row>
 										</div>
 										<div
@@ -545,7 +543,7 @@ const JobRecommend = ({ data }: { data: JobRecommendData }) => {
 														height={16}
 													/>
 												</Column>
-												<Column style={label}>Hong Kong Resident</Column>
+												<Column style={label}>Palo Alto, California</Column>
 											</Row>
 										</div>
 									</div>
