@@ -5,10 +5,11 @@
   "scripts": {
     "build": "email build --dir src/emails",
     "dev": "email dev --dir src/emails",
-    "export": "email export --dir src/emails --pretty"
+    "export": "cross-env tsx scripts/export.tsx"
   },
   "dependencies": {
     "@react-email/components": "0.0.27",
+    "@react-email/render": "1.0.2",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
@@ -16,6 +17,8 @@
     "@types/node": "^22.9.0",
     "@types/react": "18.3.4",
     "@types/react-dom": "18.3.0",
-    "react-email": "3.0.2"
+    "cross-env": "^7.0.3",
+    "react-email": "3.0.2",
+    "tsx": "^4.19.2"
   }
 }
