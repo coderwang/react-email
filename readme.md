@@ -49,3 +49,5 @@ pnpm dev
 12、Button 组件内部包裹 div 的话，div 部分地方可能无法点击（可能是由于 div 内部又有一层 Button 组件）或出现一些奇奇怪怪的问题，需要把 div 再用 Section 组件包裹一下
 
 13、Row 组件不要加 padding，否则在手机端浏览器下 outlook 会出现奇怪的问题，可以用 div 包裹 Row 组件，然后给 div 加 padding
+
+14、要想手机端自动缩放，需要给 Row 加`style={{ width: '600px' }}`，目前仅手机端浏览器 gmail 不支持
