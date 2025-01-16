@@ -14,12 +14,20 @@ const entryName = entryArg.split('=')[1];
 
 (async () => {
 	try {
-		// 动态导入对应的邮件模板和 mock 数据
+		// 动态导入对应的邮件模板
 		const templatePath = `../src/emails/${entryName}`;
 		const { default: Template } = await import(templatePath);
-		const { mockData } = await import(`${templatePath}/mock`);
+		const templateProps: {
+			data?: Record<string, any>;
+		} = {};
+		try {
+			const { mockData } = await import(`${templatePath}/mock`);
+			templateProps.data = mockData;
+		} catch (error) {
+			console.info('🚀🚀🚀 ~ 未检测到mock文件，表明这是一个静态模板');
+		}
 
-		const html = await render(<Template data={mockData} />, {
+		const html = await render(<Template {...templateProps} />, {
 			pretty: true,
 		});
 
