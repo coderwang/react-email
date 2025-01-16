@@ -27,19 +27,45 @@ const entryName = entryArg.split('=')[1];
 			console.info('🚀🚀🚀 ~ 未检测到mock文件，表明这是一个静态模板');
 		}
 
-		const html = await render(<Template {...templateProps} />, {
-			pretty: true,
-		});
+		let isSingleLang = true;
+
+		try {
+			await import(`${templatePath}/i18n`);
+			isSingleLang = false;
+		} catch (error) {
+			console.info('🚀🚀🚀 ~ 未检测到i18n文件，表明这是一个单语言模板');
+		}
+
+		let html = '';
+		let enHtml = '';
+		let zhHtml = '';
+
+		if (isSingleLang) {
+			html = await render(<Template {...templateProps} />, {
+				pretty: true,
+			});
+		} else {
+			enHtml = await render(<Template {...templateProps} lang="en" />, {
+				pretty: true,
+			});
+			zhHtml = await render(<Template {...templateProps} lang="zh" />, {
+				pretty: true,
+			});
+		}
 
 		// 创建输出目录
 		const outputDir = path.join(__dirname, '../output', entryName);
 		await fs.promises.mkdir(outputDir, { recursive: true });
 
-		// 保存 HTML 文件
-		const outputPath = path.join(outputDir, 'index.html');
-		await fs.promises.writeFile(outputPath, html, 'utf-8');
+		// 导出文件
+		if (isSingleLang) {
+			await fs.promises.writeFile(path.join(outputDir, 'index.html'), html, 'utf-8');
+		} else {
+			await fs.promises.writeFile(path.join(outputDir, 'en.html'), enHtml, 'utf-8');
+			await fs.promises.writeFile(path.join(outputDir, 'zh.html'), zhHtml, 'utf-8');
+		}
 
-		console.log(`HTML 文件已保存到: ${outputPath}`);
+		console.log(`文件已保存到: ${outputDir} 目录下`);
 	} catch (error) {
 		console.error(`导出失败: ${error.message}`);
 		process.exit(1);

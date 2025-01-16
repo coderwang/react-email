@@ -1,5 +1,7 @@
 import React from 'react';
 import { Html, Head, Body, Row, Column, Preview } from '@react-email/components';
+import { DataProps, mockData } from './mock';
+import i18nData from './i18n';
 
 const title: React.CSSProperties = {
 	fontSize: '24px',
@@ -15,17 +17,19 @@ const content: React.CSSProperties = {
 	textAlign: 'center',
 };
 
-const Template = () => {
+const Template = ({ data, lang }: { data: DataProps; lang: string }) => {
+	const i18n = i18nData[lang];
+
 	return (
-		<Html lang="en">
+		<Html lang={lang}>
 			<Head />
-			<Preview>Here is a preview text, you can see it in the email preview</Preview>
+			<Preview>{i18n.preview}</Preview>
 			<Body style={{ backgroundColor: '#f5f5f5' }}>
 				<div style={{ backgroundColor: '#f5f5f5', width: '100%' }}>
 					<Row style={{ width: '600px', margin: '0 auto', backgroundColor: '#fff' }}>
 						<Column>
-							<div style={title}>This is a template</div>
-							<div style={content}>You can write your email content here</div>
+							<div style={title}>{data.title}</div>
+							<div style={content}>{data.content}</div>
 						</Column>
 					</Row>
 				</div>
@@ -34,6 +38,9 @@ const Template = () => {
 	);
 };
 
-Template.PreviewProps = {};
+Template.PreviewProps = {
+	data: mockData,
+	lang: 'en',
+};
 
 export default Template;
