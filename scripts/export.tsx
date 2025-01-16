@@ -6,7 +6,9 @@ import fs from 'fs';
 // 获取命令行参数
 const entryArg = process.argv.find((arg) => arg.startsWith('--entry='));
 if (!entryArg) {
-	console.error('请指定 --entry 参数，例如: --entry=job-recommend');
+	console.error(
+		'\x1b[41m FAIL \x1b[0m \x1b[31m请指定 --entry 参数，例如: --entry=job-recommend\x1b[0m\n',
+	);
 	process.exit(1);
 }
 
@@ -24,7 +26,7 @@ const entryName = entryArg.split('=')[1];
 			const { mockData } = await import(`${templatePath}/mock`);
 			templateProps.data = mockData;
 		} catch (error) {
-			console.info('🚀🚀🚀 ~ 未检测到mock文件，表明这是一个静态模板');
+			console.info('\x1b[43m INFO \x1b[0m \x1b[33m未检测到mock文件，表明这是一个静态模板\x1b[0m\n');
 		}
 
 		let isSingleLang = true;
@@ -33,13 +35,16 @@ const entryName = entryArg.split('=')[1];
 			await import(`${templatePath}/i18n`);
 			isSingleLang = false;
 		} catch (error) {
-			console.info('🚀🚀🚀 ~ 未检测到i18n文件，表明这是一个单语言模板');
+			console.info(
+				'\x1b[43m INFO \x1b[0m \x1b[33m未检测到i18n文件，表明这是一个单语言模板\x1b[0m\n',
+			);
 		}
 
 		let html = '';
 		let enHtml = '';
 		let zhHtml = '';
 
+		// render
 		if (isSingleLang) {
 			html = await render(<Template {...templateProps} />, {
 				pretty: true,
@@ -65,9 +70,9 @@ const entryName = entryArg.split('=')[1];
 			await fs.promises.writeFile(path.join(outputDir, 'zh.html'), zhHtml, 'utf-8');
 		}
 
-		console.log(`文件已保存到: ${outputDir} 目录下`);
+		console.log(`\x1b[42m SUCCESS \x1b[0m \x1b[32m文件已保存到: ${outputDir} 目录下\x1b[0m\n`);
 	} catch (error) {
-		console.error(`导出失败: ${error.message}`);
+		console.error(`\x1b[41m FAIL \x1b[0m \x1b[31m导出失败: ${error.message}\x1b[0m\n`);
 		process.exit(1);
 	}
 })();
