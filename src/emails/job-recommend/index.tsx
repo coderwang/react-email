@@ -1,4 +1,4 @@
-import { Html, Body, Img, Button, Row, Column } from '@react-email/components';
+import { Html, Body, Img, Button, Row, Column, Head } from '@react-email/components';
 import React, { FC } from 'react';
 import Footer from '../../components/Footer';
 import ImgWithText from '../../components/ImgWithText';
@@ -233,6 +233,7 @@ const greeting: React.CSSProperties = {
 const JobRecommend = ({ data }: { data: JobRecommendData }) => {
 	return (
 		<Html>
+			<Head />
 			<Body style={{ backgroundColor: '#f5f5f5' }}>
 				<div style={{ backgroundColor: '#f5f5f5', width: '100%' }}>
 					<Row style={{ width: '600px', margin: '0 auto', backgroundColor: '#fff' }}>
