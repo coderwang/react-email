@@ -1,8 +1,8 @@
 import { Html, Body, Img, Button, Row, Column } from '@react-email/components';
 import React, { FC } from 'react';
-import Footer from '../../../components/Footer';
-import ImgWithText from '../../../components/ImgWithText';
-import BasicButton from '../../../components/BasicButton';
+import Footer from '../../components/Footer';
+import ImgWithText from '../../components/ImgWithText';
+import BasicButton from '../../components/BasicButton';
 import { JobRecommendData, mockData } from './mock';
 
 const userName: React.CSSProperties = {
