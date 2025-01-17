@@ -3,6 +3,11 @@ import { Html, Head, Body, Row, Column, Preview } from '@react-email/components'
 import { DataProps, mockData } from './mock';
 import i18nData from './i18n';
 
+const bodyStyle: React.CSSProperties = {
+	backgroundColor: '#f5f5f5',
+	wordBreak: 'break-all',
+};
+
 const title: React.CSSProperties = {
 	fontSize: '24px',
 	fontWeight: 'bold',
@@ -24,8 +29,8 @@ const Template = ({ data, lang }: { data: DataProps; lang: string }) => {
 		<Html lang={lang}>
 			<Head />
 			<Preview>{i18n.preview}</Preview>
-			<Body style={{ backgroundColor: '#f5f5f5' }}>
-				<div style={{ backgroundColor: '#f5f5f5', width: '100%' }}>
+			<Body style={bodyStyle}>
+				<div style={bodyStyle}>
 					<Row style={{ width: '600px', margin: '0 auto', backgroundColor: '#fff' }}>
 						<Column>
 							<div style={title}>{data.title}</div>

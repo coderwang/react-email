@@ -5,6 +5,11 @@ import ImgWithText from '../../components/ImgWithText';
 import BasicButton from '../../components/BasicButton';
 import { JobRecommendData, mockData } from './mock';
 
+const bodyStyle: React.CSSProperties = {
+	backgroundColor: '#f5f5f5',
+	wordBreak: 'break-all',
+};
+
 const userName: React.CSSProperties = {
 	margin: '0 0 36px 0',
 	color: '#171D26',
@@ -234,8 +239,8 @@ const JobRecommend = ({ data }: { data: JobRecommendData }) => {
 	return (
 		<Html>
 			<Head />
-			<Body style={{ backgroundColor: '#f5f5f5' }}>
-				<div style={{ backgroundColor: '#f5f5f5', width: '100%' }}>
+			<Body style={bodyStyle}>
+				<div style={bodyStyle}>
 					<Row style={{ width: '600px', margin: '0 auto', backgroundColor: '#fff' }}>
 						<Column>
 							<div

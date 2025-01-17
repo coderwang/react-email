@@ -1,6 +1,11 @@
 import React from 'react';
 import { Html, Head, Body, Row, Column, Preview } from '@react-email/components';
 
+const bodyStyle: React.CSSProperties = {
+	backgroundColor: '#f5f5f5',
+	wordBreak: 'break-all',
+};
+
 const title: React.CSSProperties = {
 	fontSize: '24px',
 	fontWeight: 'bold',
@@ -20,8 +25,8 @@ const Template = () => {
 		<Html lang="en">
 			<Head />
 			<Preview>Here is a preview text, you can see it in the email preview</Preview>
-			<Body style={{ backgroundColor: '#f5f5f5' }}>
-				<div style={{ backgroundColor: '#f5f5f5', width: '100%' }}>
+			<Body style={bodyStyle}>
+				<div style={bodyStyle}>
 					<Row style={{ width: '600px', margin: '0 auto', backgroundColor: '#fff' }}>
 						<Column>
 							<div style={title}>This is a template</div>
