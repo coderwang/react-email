@@ -51,3 +51,5 @@ pnpm dev
 13、Row 组件不要加 padding，否则在手机端浏览器下 outlook 会出现奇怪的问题，可以用 div 包裹 Row 组件，然后给 div 加 padding
 
 14、要想手机端自动缩放，需要给 Row 加`style={{ width: '600px' }}`，目前仅手机端浏览器 gmail 不支持
+
+15、别用`whiteSpace: 'pre-line | pre-wrap'`去换行，outlook 无效
