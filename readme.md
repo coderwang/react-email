@@ -55,3 +55,5 @@ pnpm dev
 15、别用`whiteSpace: 'pre-line | pre-wrap'`去换行，outlook 无效
 
 16、在个别浏览器（qq、网易）下字体设置会被覆盖，需用 style 标签手动设置
+
+17、单图片按钮尽量用 Link 组件而不是 Button 组件，Button 组件的高度会多 2px
