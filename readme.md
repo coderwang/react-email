@@ -53,3 +53,5 @@ pnpm dev
 14、要想手机端自动缩放，需要给 Row 加`style={{ width: '600px' }}`，目前仅手机端浏览器 gmail 不支持
 
 15、别用`whiteSpace: 'pre-line | pre-wrap'`去换行，outlook 无效
+
+16、在个别浏览器（qq、网易）下字体设置会被覆盖，需用 style 标签手动设置

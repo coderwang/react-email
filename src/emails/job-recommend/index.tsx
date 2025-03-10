@@ -1,11 +1,12 @@
 import { Html, Body, Img, Button, Row, Column, Head } from '@react-email/components';
-import React, { FC } from 'react';
+import React from 'react';
 import Footer from '../../components/Footer';
 import ImgWithText from '../../components/ImgWithText';
 import BasicButton from '../../components/BasicButton';
 import { JobRecommendData, mockData } from './mock';
 
 const bodyStyle: React.CSSProperties = {
+	fontFamily: `system-ui,-apple-system,BlinkMacSystemFont,'PingFang HK',Arial,'Microsoft Yahei',Roboto,'Segoe UI','Helvetica Neue','Noto Sans TC',sans-serif`,
 	backgroundColor: '#f5f5f5',
 	wordBreak: 'break-all',
 };
@@ -13,7 +14,6 @@ const bodyStyle: React.CSSProperties = {
 const userName: React.CSSProperties = {
 	margin: '0 0 36px 0',
 	color: '#171D26',
-	fontFamily: 'SF Pro',
 	fontSize: '16px',
 	fontStyle: 'normal',
 	fontWeight: 400,
@@ -22,7 +22,6 @@ const userName: React.CSSProperties = {
 
 const replyText: React.CSSProperties = {
 	color: '#171D26',
-	fontFamily: 'SF Pro',
 	fontSize: '28px',
 	fontStyle: 'normal',
 	fontWeight: 600,
@@ -33,7 +32,6 @@ const replyText: React.CSSProperties = {
 const replyContent: React.CSSProperties = {
 	margin: '0 0 24px 0',
 	color: '#207A74',
-	fontFamily: 'SF Pro',
 	fontSize: '18px',
 	fontStyle: 'normal',
 	fontWeight: 600,
@@ -50,7 +48,6 @@ const card: React.CSSProperties = {
 
 const companyName: React.CSSProperties = {
 	color: '#171D26',
-	fontFamily: 'SF Pro',
 	fontSize: '18px',
 	fontStyle: 'normal',
 	fontWeight: 600,
@@ -66,7 +63,6 @@ const companyName: React.CSSProperties = {
 const contactName: React.CSSProperties = {
 	display: 'inline-block',
 	color: '#363F4D',
-	fontFamily: 'SF Pro',
 	fontSize: '16px',
 	fontStyle: 'normal',
 	fontWeight: 400,
@@ -84,7 +80,6 @@ const divider: React.CSSProperties = {
 const contactTitle: React.CSSProperties = {
 	display: 'inline-block',
 	color: '#363F4D',
-	fontFamily: 'SF Pro',
 	fontSize: '16px',
 	fontStyle: 'normal',
 	fontWeight: 400,
@@ -96,7 +91,6 @@ const contactText: React.CSSProperties = {
 	marginBottom: '24px',
 	padding: '12px 16px',
 	color: '#171D26',
-	fontFamily: 'SF Pro',
 	fontSize: '14px',
 	fontStyle: 'normal',
 	fontWeight: 400,
@@ -112,7 +106,6 @@ const unreadMsg: React.CSSProperties = {
 const unreadCount: React.CSSProperties = {
 	marginRight: '8px',
 	color: '#4B5363',
-	fontFamily: 'SF Pro',
 	fontSize: '16px',
 	fontStyle: 'normal',
 	fontWeight: 510,
@@ -121,7 +114,6 @@ const unreadCount: React.CSSProperties = {
 
 const unreadCheck: React.CSSProperties = {
 	color: '#207A74',
-	fontFamily: 'SF Pro',
 	fontSize: '16px',
 	fontStyle: 'normal',
 	fontWeight: 510,
@@ -132,7 +124,6 @@ const unreadCheck: React.CSSProperties = {
 const jobRecommend: React.CSSProperties = {
 	display: 'inline-block',
 	color: '#06605A',
-	fontFamily: 'SF Pro',
 	fontSize: '22px',
 	fontStyle: 'normal',
 	fontWeight: 600,
@@ -143,7 +134,6 @@ const jobRecommend: React.CSSProperties = {
 const jobRecommendDesc: React.CSSProperties = {
 	marginBottom: '24px',
 	color: '#8D97A6',
-	fontFamily: 'SF Pro',
 	fontSize: '16px',
 	fontStyle: 'normal',
 	fontWeight: 400,
@@ -154,7 +144,6 @@ const jobRecommendDesc: React.CSSProperties = {
 const jobTitle: React.CSSProperties = {
 	marginBottom: '8px',
 	color: '#171D26',
-	fontFamily: 'SF Pro',
 	fontSize: '18px',
 	fontStyle: 'normal',
 	fontWeight: 590,
@@ -169,7 +158,6 @@ const jobTitle: React.CSSProperties = {
 
 const jobCompany: React.CSSProperties = {
 	color: '#363F4D',
-	fontFamily: 'SF Pro',
 	fontSize: '16px',
 	fontStyle: 'normal',
 	fontWeight: 400,
@@ -187,7 +175,6 @@ const label: React.CSSProperties = {
 
 const commonDesc: React.CSSProperties = {
 	color: '#363F4D',
-	fontFamily: 'SF Pro',
 	fontSize: '14px',
 	fontStyle: 'normal',
 	fontWeight: 400,
@@ -199,7 +186,6 @@ const applyButtonText: React.CSSProperties = {
 	width: '137px',
 	height: '36px',
 	color: '#171D26',
-	fontFamily: 'PingFang SC',
 	fontSize: '14px',
 	fontStyle: 'normal',
 	fontWeight: 500,
@@ -218,7 +204,6 @@ const moreJobsBtn: React.CSSProperties = {
 
 const moreJobsText: React.CSSProperties = {
 	color: '#FFFFFF',
-	fontFamily: 'PingFang SC',
 	fontSize: '16px',
 	fontStyle: 'normal',
 	fontWeight: 600,
@@ -228,7 +213,6 @@ const moreJobsText: React.CSSProperties = {
 
 const greeting: React.CSSProperties = {
 	color: '#171D26',
-	fontFamily: 'SF Pro',
 	fontSize: '16px',
 	fontStyle: 'normal',
 	fontWeight: 400,
@@ -238,7 +222,15 @@ const greeting: React.CSSProperties = {
 const JobRecommend = ({ data }: { data: JobRecommendData }) => {
 	return (
 		<Html>
-			<Head />
+			<Head>
+				<style>
+					{`
+            th, td {
+              font-family: system-ui,-apple-system,BlinkMacSystemFont,PingFang HK,Arial,Microsoft Yahei,Roboto,Segoe UI,Helvetica Neue,Noto Sans TC,sans-serif !important;
+            }
+          `}
+				</style>
+			</Head>
 			<Body style={bodyStyle}>
 				<div style={bodyStyle}>
 					<Row style={{ width: '600px', margin: '0 auto', backgroundColor: '#fff' }}>

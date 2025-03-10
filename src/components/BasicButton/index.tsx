@@ -22,7 +22,6 @@ const BasicButton: FC<BasicButtonProps> = (props) => {
 						width: '240px',
 						height: '48px',
 						color: '#FFFFFF',
-						fontFamily: 'SF Pro',
 						fontSize: '16px',
 						fontStyle: 'normal',
 						fontWeight: 500,

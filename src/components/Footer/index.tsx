@@ -15,7 +15,6 @@ const Footer = () => {
 					width: '319px',
 					margin: '0 auto 40px',
 					color: '#FFFFFF',
-					fontFamily: 'SF Pro',
 					fontSize: '14px',
 					fontStyle: 'normal',
 					fontWeight: 510,
@@ -56,7 +55,6 @@ const Footer = () => {
 			<div
 				style={{
 					color: '#FFFFFF',
-					fontFamily: 'SF Pro',
 					fontSize: '12px',
 					fontStyle: 'normal',
 					fontWeight: 400,

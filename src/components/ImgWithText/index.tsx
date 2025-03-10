@@ -34,7 +34,6 @@ const ImgWithText: FC<ImgWithTextProps> = (props) => {
 			<span
 				style={{
 					color: '#222222',
-					fontFamily: 'D-DIN',
 					fontSize: '21px',
 					fontStyle: 'normal',
 					fontWeight: 700,

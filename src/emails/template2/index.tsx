@@ -4,6 +4,7 @@ import { DataProps, mockData } from './mock';
 import i18nData from './i18n';
 
 const bodyStyle: React.CSSProperties = {
+	fontFamily: `system-ui,-apple-system,BlinkMacSystemFont,'PingFang HK',Arial,'Microsoft Yahei',Roboto,'Segoe UI','Helvetica Neue','Noto Sans TC',sans-serif`,
 	backgroundColor: '#f5f5f5',
 	wordBreak: 'break-all',
 };
@@ -27,7 +28,15 @@ const Template = ({ data, lang }: { data: DataProps; lang: string }) => {
 
 	return (
 		<Html lang={lang}>
-			<Head />
+			<Head>
+				<style>
+					{`
+            th, td {
+              font-family: system-ui,-apple-system,BlinkMacSystemFont,PingFang HK,Arial,Microsoft Yahei,Roboto,Segoe UI,Helvetica Neue,Noto Sans TC,sans-serif !important;
+            }
+          `}
+				</style>
+			</Head>
 			<Preview>{i18n.preview}</Preview>
 			<Body style={bodyStyle}>
 				<div style={bodyStyle}>
