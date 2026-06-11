@@ -57,3 +57,5 @@ pnpm dev
 16、在个别浏览器（qq、网易）下字体设置会被覆盖，需用 style 标签手动设置
 
 17、单图片按钮尽量用 Link 组件而不是 Button 组件，Button 组件的高度会多 2px
+
+18、尽量不要用 div，手机 outlook 和 gmail 客户端可能会把 div 的宽度去掉，导致布局错乱。使用 Row 和 Column 组件代替 div。
