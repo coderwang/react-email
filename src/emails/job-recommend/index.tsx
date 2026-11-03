@@ -4,6 +4,7 @@ import Footer from '../../components/Footer';
 import ImgWithText from '../../components/ImgWithText';
 import BasicButton from '../../components/BasicButton';
 import { JobRecommendData, mockData } from './mock';
+import { Placeholder } from '../../components/Placeholder';
 
 const bodyStyle: React.CSSProperties = {
 	fontFamily: `system-ui,-apple-system,BlinkMacSystemFont,'PingFang HK',Arial,'Microsoft Yahei',Roboto,'Segoe UI','Helvetica Neue','Noto Sans TC',sans-serif`,
@@ -572,6 +573,8 @@ const JobRecommend = ({ data }: { data: JobRecommendData }) => {
 								<div style={{ ...greeting, marginBottom: '40px' }}>OfferToday Team</div>
 							</div>
 							<Footer />
+
+							<Placeholder height={0} />
 						</Column>
 					</Row>
 				</div>
